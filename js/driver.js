@@ -156,14 +156,6 @@
 							'</a>'
 							;
 
-					//Change for nodalyzer
-					app_data = {
-						name: app,
-						categories: [],
-					};
-					result.push(app_data);
-					//Change ends for nodalyzer
-
 					for ( i in w.apps[app].cats ) {
 						if(!hasOwn.call(w.apps[app].cats, i)) {
 							continue;
@@ -173,7 +165,10 @@
 						html += '<a target="_blank" class="wappalyzer-category" href="' + w.config.websiteURL + 'categories/' + w.categories[category] + '">' + categoryNames[category] + '</a>';
 
 						//Change for nodalyzer
-						app_data.categories.push(categoryNames[category]);
+						result.push({
+							name: app,
+							category: categoryNames[category],
+						});
 						//Change ends for nodalyzer
 
 					}
