@@ -15,6 +15,7 @@
     "wappalyzer",
     "nodalyzer"
   ],
+  "preferGlobal": true,
   "bin": {
     "nodalyzer": "nodalyzer-cmd.js"
   },
