@@ -1,0 +1,23 @@
+{
+  "name": "nodalyzer",
+  "version": "1.0.0",
+  "description": "node.js wrapper for wappalyzer",
+  "main": "lib/main.js",
+  "dependencies": {
+    "minimist": "^1.1.1",
+    "phantom": "^0.7.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "wappalyzer",
+    "nodalyzer"
+  ],
+  "bin": {
+    "nodalyzer": "nodalyzer-cmd.js"
+  },
+  "author": "Royal Pinto <royalpinto@gmail.com>",
+  "license": "MIT"
+}
