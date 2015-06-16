@@ -36,4 +36,7 @@ nodalyzer.init(function(status) {
 }, {
     verbose: argv.verbose || argv.v || false,
     nport: nport,
+    dnodeOpts: {
+        weak: false,
+    },
 });
